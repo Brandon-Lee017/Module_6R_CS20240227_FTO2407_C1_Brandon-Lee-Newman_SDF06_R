@@ -8,11 +8,20 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Open Sans", Arial, sans-serif;
-    background-color: #fafafa;
+@media screen and (min-width: 600px) {
+    body {font-family: "Open Sans", Arial, sans-serif;
+    background-color: #ffffb2;
     color: #262626;
     padding-bottom: 3rem;
+}
+}
+
+@media screen and (min-width: 992px) {
+    body {font-family: "Open Sans", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2f2e2e;
+    padding-bottom: 3rem;
+}
 }
 
 .container {
@@ -60,6 +69,12 @@ body {
     border-radius: 4px;
     margin: 5px;
     cursor: pointer;
+}
+
+.btn:active {
+    background-color: transparent;
+    box-shadow: 5px 5px #787890;
+    transform: translateY(4px);
 }
 
 .btn-profile-edit-btn {
